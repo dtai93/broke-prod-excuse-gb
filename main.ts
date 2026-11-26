@@ -2,7 +2,7 @@
 import { mkdirSync, writeFileSync } from "node:fs";
 
 const LINE =
-  "I autocompleted your password reset into a database reset.";
+  "Health check said 200, so I kept the autocomplete: database reset.";
 
 if ([...LINE].length < 1 || [...LINE].length > 180 || LINE.trim().length === 0) {
   throw new Error("entry line must be 1-180 non-blank characters");
